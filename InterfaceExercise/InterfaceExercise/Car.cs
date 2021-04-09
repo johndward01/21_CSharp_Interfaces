@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExercise
 {
-    public class Car : IVehicle, ICompany
+    public class Car : IVehicle
     {
         public bool IsConvertible { get; set; }
         public bool HasTrunk { get; set; }
@@ -18,5 +18,12 @@ namespace InterfaceExercise
 
         public string Logo { get; set; }
         public string Slogan { get; set; }
+        public int FuelMileage { get; set; }
+        public string MissionStatement { get; set; }
+
+        public void Drive()
+        {
+            Console.WriteLine("Car is Driving");
+        }
     }
 }

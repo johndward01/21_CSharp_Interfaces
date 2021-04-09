@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExercise
 {
-    public class SUV : IVehicle, ICompany
+    public class SUV : IVehicle
     {
         public bool HasCargoHold { get; set; }
         public bool HasTVScreens { get; set; }
@@ -17,14 +17,16 @@ namespace InterfaceExercise
 
         public string Logo { get; set; }
         public string Slogan { get; set; }
+        public int FuelMileage { get; set; }
+        public string MissionStatement { get; set; }
 
         public SUV()
         {
 
         }
 
-        public SUV(bool hasCargohold, bool hasTvScreens, int numberOfWheels, bool hasHeadLights, bool hasTailLights,
-                                      int gasMileage, string color, string logo, string slogan)
+        // Parameterized Constructor
+        public SUV(bool hasCargohold, bool hasTvScreens, int numberOfWheels, bool hasHeadLights, bool hasTailLights, int gasMileage, string color, string logo, string slogan, string missionStatement)
         {
             HasCargoHold = hasCargohold;
             HasTVScreens = hasTvScreens;
@@ -35,8 +37,13 @@ namespace InterfaceExercise
             Color = color;
             Logo = logo;
             Slogan = slogan;
+            MissionStatement = missionStatement;
         }
 
-        
+        public void Drive()
+        {
+            Console.WriteLine("SUV is Driving"); 
+
+        }
     }
 }
