@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExercise
 {
-    public class SUV : IVehicle, ICompany
+    public class SUV : IVehicle
     {
         // Specific to the class
         public bool HasCargoHold { get; set; }
@@ -20,6 +20,8 @@ namespace InterfaceExercise
         // Specific to ICompany
         public string Logo { get; set; }
         public string Slogan { get; set; }
+        public int FuelMileage { get; set; }
+        public string MissionStatement { get; set; }
 
 
         // Constructors
@@ -40,8 +42,13 @@ namespace InterfaceExercise
             Color = color;
             Logo = logo;
             Slogan = slogan;
+            MissionStatement = missionStatement;
         }
 
-        
+        public void Drive()
+        {
+            Console.WriteLine("SUV is Driving"); 
+
+        }
     }
 }

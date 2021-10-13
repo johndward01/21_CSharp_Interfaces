@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace InterfaceExercise
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -15,21 +15,14 @@ namespace InterfaceExercise
 
             //Create 3 classes called Car , Truck , & SUV
 
-            //In your IVehicle
+            // In each of your car, truck, and suv classes
+            // TODO -  Create 2 members that are specific to each class
+            // Example: truck has a bed size while car has a trunk while suv has a cargo hold size
+             
+            // TODO - Set each class to inherit from both IVehicle and ICompany and implement their members.
+             
 
-            /* Create 4 members that Car, Truck, & SUV all have in common.
-             * Example: All vehicles have a number of wheels... for now..
-             */
-
-
-            //In ICompany
-
-            /*Create 2 members that are specific to each every company
-             * regardless of vehicle type.
-             *
-             *
-             * Example: public string Logo { get; set; }
-             */
+            //TODO - create objects of your 3 classes and give their members values;
 
             //In each of your car, truck, and suv classes
 
@@ -84,7 +77,7 @@ namespace InterfaceExercise
 
             foreach (var vehicle in vehicles)
             {
-                Console.WriteLine($"{vehicle.GasMileage}");
+                Console.WriteLine($"{vehicle.FuelMileage}");
             }
                         
         }
