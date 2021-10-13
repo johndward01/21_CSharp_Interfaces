@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Interface_Demo
 {
-    class Cube : _2Dimensional, _3Dimensional
+    class Cube : I2Dimensional, I3Dimensional
     {
         public double GetVolume(double length, double width, double height)
         {

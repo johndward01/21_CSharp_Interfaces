@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Interface_Demo
 {
-    public class Triangle : Shape, ISample 
+    public interface ISample
     {
-        
+        public void SampleMethod1();
     }
 }

@@ -4,10 +4,9 @@ using System.Text;
 
 namespace Interface_Demo
 {
-    public interface _4Dimensional
+    public interface I2Dimensional
     {
-        public int MyProperty { get; set; }
-
+        public double GetArea(double x, double y);
 
     }
 }

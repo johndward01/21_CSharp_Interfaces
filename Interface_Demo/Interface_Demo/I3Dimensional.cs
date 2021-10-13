@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Interface_Demo
 {
-    interface _3Dimensional
+    public interface I3Dimensional
     {
         double GetVolume(double x, double y, double z);
     }

@@ -4,18 +4,26 @@ using System.Text;
 
 namespace Interface_Demo
 {
-    class Shape : _2Dimensional, _3Dimensional, _4Dimensional
+    public class Shape : ISample, I2Dimensional, I3Dimensional, I4Dimensional
     {
-        public int MyProperty { get; set; }
+        public void ASampleMethod()
+        {
+            Console.WriteLine("Implemented");
+        }
 
         public double GetArea(double x, double y)
         {
-            throw new NotImplementedException();
+            return x * y;
         }
 
         public double GetVolume(double x, double y, double z)
         {
-            throw new NotImplementedException();
+            return x * y * z;
+        }
+
+        public void SampleMethod1()
+        {
+            Console.WriteLine("Running SampleMethod1()...");
         }
     }
 }

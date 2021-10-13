@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Interface_Demo
 {
-    interface _2Dimensional
+    public interface I4Dimensional
     {
-        public double GetArea(double x, double y);
-
+        public void ASampleMethod();
     }
 }

@@ -11,7 +11,5 @@ namespace InterfaceExercise
         public bool HasTailLights { get; set; }
         public int GasMileage { get; set; }
         public string Color { get; set; }
-
-
     }
 }
