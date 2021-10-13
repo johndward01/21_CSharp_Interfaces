@@ -8,6 +8,5 @@ namespace InterfaceExercise
     {
         public string Logo { get; set; }
         public string Slogan { get; set; }
-        public string MissionStatement { get; set; }
     }
 }

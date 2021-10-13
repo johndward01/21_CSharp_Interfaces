@@ -42,7 +42,6 @@ namespace InterfaceExercise
             Color = color;
             Logo = logo;
             Slogan = slogan;
-            MissionStatement = missionStatement;
         }
 
         public void Drive()
