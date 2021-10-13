@@ -77,7 +77,7 @@ namespace InterfaceExercise
 
             foreach (var vehicle in vehicles)
             {
-                Console.WriteLine($"{vehicle.FuelMileage}");
+                Console.WriteLine($"{vehicle.GetType().GUID}: {vehicle.GetType().Name} - {vehicle.Slogan}");
             }
                         
         }
