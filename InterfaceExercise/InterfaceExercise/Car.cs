@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExercise
 {
-    public class Car : IVehicle
+    public class Car : IVehicle, ICompany
     {
         // Specific to the class
         public bool IsConvertible { get; set; }

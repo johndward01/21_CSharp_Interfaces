@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExercise
 {
-    public class SUV : IVehicle
+    public class SUV : IVehicle, ICompany
     {
         // Specific to the class
         public bool HasCargoHold { get; set; }
@@ -31,7 +31,7 @@ namespace InterfaceExercise
         }
 
         public SUV(bool hasCargohold, bool hasTvScreens, int numberOfWheels, bool hasHeadLights,
-                    bool hasTailLights, int gasMileage, string color, string logo, string slogan)
+            bool hasTailLights, int gasMileage, string color, string logo, string slogan)
         {
             HasCargoHold = hasCargohold;
             HasTVScreens = hasTvScreens;

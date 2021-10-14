@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExercise
 {
-    public class Truck : IVehicle
+    public class Truck : IVehicle, ICompany
     {
         // Specific to the class
         public bool HasTrailer { get; set; }

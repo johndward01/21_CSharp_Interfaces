@@ -69,7 +69,7 @@ namespace InterfaceExercise
             SUV mySUV = new SUV(true, true, 4, true, true, 15, "black", "Cadillac Logo", "Standard of the World");
 
             //Creatively display and organize their values
-            List<IVehicle> vehicles = new List<IVehicle>();
+            var vehicles = new List<IVehicle>();
 
             vehicles.Add(myTruck);
             vehicles.Add(mySUV);
@@ -77,7 +77,7 @@ namespace InterfaceExercise
 
             foreach (var vehicle in vehicles)
             {
-                Console.WriteLine($"{vehicle.GetType().GUID}: {vehicle.GetType().Name} - {vehicle.Slogan}");
+                Console.WriteLine($"{vehicle.GetType().GUID}: {vehicle.GetType().Name}");
             }
                         
         }

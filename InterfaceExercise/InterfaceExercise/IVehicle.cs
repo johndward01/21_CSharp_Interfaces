@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InterfaceExercise
 {
-    public interface IVehicle : ICompany
+    public interface IVehicle
     {
         public int NumberOfWheels { get; set; }
         public bool HasHeadLights { get; set; }
